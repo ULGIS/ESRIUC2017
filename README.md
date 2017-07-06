@@ -33,7 +33,7 @@ The create_AOI python script is built to run in the ArcGIS Pro as a tool. After 
 
 These BHLID's are passed into a definition query to layers like wells and laterals where the data is stored in the attribute tables.  Leases are selected by running an intersect between the selected laterals and the multipatch leases. Multipatch leases must be used because 3D intersect does not work on extruded features. All 3D leases shown in pictures are extruded. 
 
-![Alt text](/Pictures/3_3D.PNG?raw=true "3D View")
+![Alt text](/Pictures/3_3DTilt.PNG?raw=true "3D View")
 
 After running this tool, you end up with the screen shot below. Just the wells, laterls, leases, perfs etc. are shown. 
 
@@ -41,7 +41,7 @@ After running this tool, you end up with the screen shot below. Just the wells, 
 
 In order to reset the map, reset_AOI.py is used. This goes to every layer and resets the definition query to its preset in order to return the map to its original state.
 
-![Alt text](/Pictures/2_3DSelected.PNG?raw=true "3D View after using AOI tool")
+![Alt text](/Pictures/2_3D.PNG?raw=true "3D View after using AOI tool")
 
 
 If you have any questions or recommendations about these scripts. Feel free to reach out to us at GIS@utsystem.edu.
