@@ -1,6 +1,6 @@
 # ESRI UC 2017
 Python scripts discussed at the ESRI user conference during the summer of 2017.
-The presentation can be found [here](docs/Presentation.ppt).
+The presentation can be found [here](docs/Presentation.pptx).
 
 ## Usage
 These python scripts show how to:
