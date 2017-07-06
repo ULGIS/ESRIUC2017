@@ -1,5 +1,6 @@
 # ESRI UC 2017
 Python scripts discussed at the ESRI user conference during the summer of 2017.
+The presentation can be found [here](docs/Presentation.ppt).
 
 ## Usage
 These python scripts show how to:
@@ -24,7 +25,23 @@ This script adds a point along an m and z enabled line feature class. This point
 ## create_AOI.py and reset_AOI.py
 Python 3.x
 
-These scripts are used in ArcGIS Pro to create an area of interest tool (AOI). They should be used as guidelines and are not written for easy implementation. They are extremely dependent on the structure of your map and data. 
+These scripts are used in ArcGIS Pro to create an area of interest tool (AOI). They should be used as guidelines and are not written for easy implementation. They are extremely dependent on the structure of your map and data. This is built around an ArcGIS Pro map with oil & gas data in a 2D map and local 3D Scene. 
+
+The create_AOI python script is built to run in the ArcGIS Pro as a tool. After the user selects one or more laterals, the script can be run. It then goes and grabs the unique ID's(in this case BHLID) for each lateral. 
+
+![Alt text](/Pictures/4_2DSelected.PNG?raw=true "Select Laterals")
+
+These BHLID's are passed into a definition query to layers like wells and laterals where the data is stored in the attribute tables.  Leases are selected by running an intersect between the selected laterals and the multipatch leases. Multipatch leases must be used because 3D intersect does not work on extruded features. All 3D leases shown in pictures are extruded. 
+
+![Alt text](/Pictures/3_3D.PNG?raw=true "3D View")
+
+After running this tool, you end up with the screen shot below. Just the wells, laterls, leases, perfs etc. are shown. 
+
+![Alt text](/Pictures/5_3DSelected.PNG?raw=true "3D View after using AOI tool")
+
+In order to reset the map, reset_AOI.py is used. This goes to every layer and resets the definition query to its preset in order to return the map to its original state.
+
+![Alt text](/Pictures/2_3DSelected.PNG?raw=true "3D View after using AOI tool")
 
 
-
+If you have any questions or recommendations about these scripts. Feel free to reach out to us at GIS@utsystem.edu.
