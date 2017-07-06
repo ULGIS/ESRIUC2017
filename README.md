@@ -44,4 +44,4 @@ In order to reset the map, reset_AOI.py is used. This goes to every layer and re
 ![Alt text](/Pictures/2_3D.PNG?raw=true "3D View after using AOI tool")
 
 
-If you have any questions or recommendations about these scripts. Feel free to reach out to us at GIS@utsystem.edu.
+If you have any questions or recommendations about these scripts, feel free to reach out to us at GIS@utsystem.edu.
