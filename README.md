@@ -1,6 +1,6 @@
 # ESRI UC 2017
 Python scripts discussed at the ESRI user conference during the summer of 2017.
-The presentation can be found [here](ESRIUC2017/Presentation.pptx).
+The presentation can be found [here](/Presentation.pptx).
 
 ## Usage
 These python scripts show how to:
@@ -14,7 +14,7 @@ Details for each script and file
 ## directional_survey_to_lateral.py
 Python 2.x
 
-This script uses arcpy to loop through a folder of directional surveys. These directional surveys are in text format of m, z, NS, EW with the start location being 0, 0, 0, 0. The start location for each lateral comes from a well point feature class. The resulting lateral is then added to a x, y, z, and m enabled line feature class in a geodatabase. An example text file has been uploaded [here](docs/4200349999.txt). The name of the text file is a unique identifier for the well (in this case an API) and used to find the well starting location. Features should be projected in a coordinate system matching the directional survey units. 
+This script uses arcpy to loop through a folder of directional surveys. These directional surveys are in text format of m, z, NS, EW with the start location being 0, 0, 0, 0. The start location for each lateral comes from a well point feature class. The resulting lateral is then added to a x, y, z, and m enabled line feature class in a geodatabase. An example text file has been uploaded [here](/4200349999.txt). The name of the text file is a unique identifier for the well (in this case an API) and used to find the well starting location. Features should be projected in a coordinate system matching the directional survey units. 
 
 ## create_perfs.py
 Python 2.x
